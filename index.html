@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tanjib Ul Islam Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body class="" data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Tanjib Ul Islam</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		<div class="md:container mx-auto md:px-4">
+		  <div class="flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center lg:gap-28 min-h-screen lg:px-40 ">
+			<!-- Left Section with Name and Info -->
+			<div 
+			  class=" bg-black bg-opacity-50 text-white flex flex-col justify-center items-start p-6 space-y-4"
+			>
+			  <span class="text-xl text-[#f2496f]">Hello!</span>
+			  <h1 class="text-4xl lg:text-6xl mb-2 font-extrabold">
+				I'm <span class="text-[#f2496f]">Tanjib Ul Islam</span>
+			  </h1>
+	  
+<!-- Element to contain animated typing -->
+<span id="typing-animation" class="text-white text-base font-normal"></span>
+
+<script>
+// Initialize the typing animation
+const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Scientist',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 500);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+
+			  <!-- Buttons -->
+			  <div class="space-x-4 pt-8">
+				<a 
+				  href="https://www.linkedin.com/in/tanjib-ul-islam-aba9b5310/" 
+				  class="bg-[#f2496f] text-white py-2 px-4 rounded-md shadow-md  transition"
+				>
+				  LinkedIn
+				</a>
+				<a 
+				  href="https://github.com/TanjiEvan" 
+				  class="border border-white text-white py-2 px-4 rounded-md shadow-md transition"
+				>
+				  GitHub
+				</a>
+			  </div>
+			</div>
+	  
+			<!-- Right Blank Section -->
+			<div 
+			  class="flex justify-center items-center"
+			>
+			<div class="">
+				<div class="about-img flex justify-center mt-4">
+				  <img src="images/about-me.png" class="img-fluid rounded-lg b-shadow-a w-2/3 " alt="">
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <div class="container pt-8"><hr class=" bg-gray-500"></div>
+
+	  <section class="container mx-auto px-8 lg:px-24 ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+		  <div class="row">
+			<div class="row d-flex align-items-stretch">
+			  <div class="col-md-6 col-lg-5 text-center">
+				<div class="img-about img d-flex align-items-stretch mx-auto">
+				  <div class="overlay flex items-center justify-center min-h-screen md:min-h-0"> 
+					<div class="bg-black md:py-8 mx-auto">
+					  <p class="title-s text-2xl font-bold mb-6 text-white text-left">Skills</p>
+					  <div class="flex-wrap justify-between items-center">
+						<div class="bg-[#f2496f] text-white py-1 px-2 md:py-2 md:px-4 rounded-lg shadow-md text-center mb-2 hover:bg-black cursor-pointer hover:border">
+						  <h3 class="text-base font-normal">Python</h3>
+						</div>
+						<div class="bg-[#f2496f] text-white py-1 px-2 md:py-2 md:px-4 rounded-lg shadow-md text-center mb-2 hover:bg-black cursor-pointer hover:border">
+							<h3 class="text-base font-normal">Data Visualization</h3>
+						</div>
+						<div class="bg-[#f2496f] text-white py-1 px-2 md:py-2 md:px-4 rounded-lg shadow-md text-center mb-2 hover:bg-black cursor-pointer hover:border">
+							<h3 class="text-base font-normal">Statistical Analysis</h3>
+						</div>
+						<div class="bg-[#f2496f] text-white py-1 px-2 md:py-2 md:px-4 rounded-lg shadow-md text-center mb-2 hover:bg-black cursor-pointer hover:border">
+							<h3 class="text-base font-normal">SQL</h3>
+						</div>
+						<div class="bg-[#f2496f] text-white py-1 px-2 md:py-2 md:px-4 rounded-lg shadow-md text-center mb-2 hover:bg-black cursor-pointer hover:border">
+							<h3 class="text-base font-normal">Machine Learning</h3>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+	  
+			  <div class="col-md-6 col-lg-7 pl-lg-5 pb-5 mt-12">
+				<div class="row justify-content-start pb-3">
+				  <div class="col-md-12 heading-section ftco-animate">
+					<h1 class="big">About</h1>
+					<h2 class="mb-4">About Me</h2>
+					<p class="text-justify">I am a results-oriented Data Scientist with a passion for solving complex business challenges through data-driven solutions. Proficient in machine learning, predictive modeling, and data analysis, I specialize in extracting actionable insights to support strategic decision-making and optimize processes. With a commitment to continuous learning, I leverage advanced tools and techniques to deliver measurable impact and foster organizational growth.</p>
+					<ul class="about-info mt-4 px-md-0 px-2">
+					  <li class="d-flex"><span>Profile:</span> <span>Data Scientist</span></li>
+					  <li class="d-flex"><span>Education:</span> <span>Bachelor of Science in Computer Science & Engineering</span></li>
+					  <li class="d-flex"><span>Language:</span> <span>English, Bangla, Hindi</span></li>
+					  <li class="d-flex"><span>Other Skills:</span> <span>Streamlit, Power BI</span></li>
+					  <li class="d-flex"><span>Interest:</span> <span>Learning Data Science, Problem Solving, Listening To Music, Watching Movies</span></li>
+					</ul>
+				  </div>
+				</div>
+				<div class="counter-wrap ftco-animate d-flex mt-md-3">
+				  <div class="text">
+					<p class="mb-4">
+					  <span class="number" data-number="10">0</span> <span>+</span>
+					  <span>&nbsp; Projects completed</span>
+					</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+
+	<section class="container mx-auto px-8 lg:px-24 ftco-section contact-section ftco-no-pb" id="introduction">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Introduction</h1>
+				<h2 class="mb-4">Introduction</h2>
+				<p></p>
+				</div>
+		  	</div>
+			  <div class="flex justify-center items-center my-8">
+				<div class="relative w-full max-w-2xl lg:max-w-4xl rounded-lg overflow-hidden shadow-lg bg-gray-800">
+					<video 
+						controls 
+						class="w-full rounded-lg" 
+						poster="C:/Users/SPPL IT/Desktop/BUSCOM/THUMBNAIL.png"  
+					>
+						<source 
+							src="C:/Users/SPPL IT/Desktop/BUSCOM/My Intro- Date.mp4" 
+							type="video/mp4"
+						/>
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+			
+	 	</div>
+   </section>
+	
+    <section class="container mx-auto px-8 lg:px-24 ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Dynamic and results-focused Data Scientist with expertise in machine learning, predictive modeling, and data analysis. Adept at creating scalable solutions that optimize business processes and drive innovation. Strong analytical skills combined with a commitment to continuous learning and leveraging advanced tools to deliver impact.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Achievements</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate" style="height: 300px; padding: 30px; box-sizing: border-box; margin-bottom: 20px;">
+					<span class="date" style="font-size: 32px; font-weight: bold;">Dean's List Honors</span>
+					<h2 style="font-size: 22px; font-weight: bold;">American International University-Bangladesh</h2>
+					<span class="position" style="font-size: 18px;">Fall 2022-23</span>
+					<p class="mt-4" style="font-size: 16px;">Recognized for outstanding academic performance and excellence by being named to the Dean's List.</p>
+				</div>
+			</div>
+		
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate" style="height: 300px; padding: 30px; box-sizing: border-box;">
+					<span class="date" style="font-size: 32px; font-weight: bold;">1st Runner-Up</span>
+					<h2 style="font-size: 22px; font-weight: bold;">DataHackathon by CoU IT Fest</h2>
+					<span class="position" style="font-size: 18px;">2024</span>
+					<p class="mt-4" style="font-size: 16px;">Awarded 1st Runner-Up for exceptional performance in the DataHackathon competition, demonstrating advanced data analysis skills and innovative problem-solving techniques.</p>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-6">
+			<div class="">
+				<div class="resume-wrap ftco-animate h-[250px] flex flex-col justify-center">
+					<span class="date">2019-2022</span>
+					<h2 class="text-lg">Bachelor of Science in CSE</h2>
+					<span class="position text-base">American International University - Bangladesh</span>
+					<p class="mt-4">CGPA: 3.87</p>
+				</div>
+			</div>
+		
+			<div class="">
+				<div class="resume-wrap ftco-animate h-[250px] flex flex-col justify-center">
+					<span class="date">2017-2018</span>
+					<h2 class="text-lg">Higher School Certificate</h2>
+					<span class="position text-base">Dhaka Imperial College</span>
+					<p class="mt-4">GPA: 4.83</p>
+				</div>
+			</div>
+		
+			<div class="">
+				<div class="resume-wrap ftco-animate h-[250px] flex flex-col justify-center">
+					<span class="date">2015-2016</span>
+					<h2 class="text-lg">Secondary School Certificate</h2>
+					<span class="position text-base">National Ideal School</span>
+					<p class="mt-4">GPA: 4.67</p>
+				</div>
+			</div>
+		</div>
+		
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="C:/Users/SPPL IT/Desktop/BUSCOM/TANJI.pdf" class="px-4 py-3 bg-[#f2496f] text-white rounded-xl">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+	<section class="container mx-auto px-8 lg:px-24 ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Below are the sample Data Analytics projects on Python</p>
+			</div>
+		  </div>
+		  
+		  <div class="flex flex-wrap justify-center gap-6">
+			<!-- Project 1 -->
+			<div class="card bg-[#1a1a1a] w-96 shadow-xl">
+				<figure class="h-48">
+					<a href="https://github.com/TanjiEvan/UEFA-CL-ANALYSIS-1955-2023-/blob/main/README.md">
+						<img src="images/proj_1.jpg" alt="UEFA Champions League Data Analysis" class="h-full w-full object-cover">
+					</a>
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title text-[#ffbd39] h-16">
+						Analysis of Historical UEFA Champions League Data (1955-2023)
+					</h2>
+					<p class="text-justify">
+						Analyzed UEFA Champions League data focusing on team performance metrics. The project includes data cleaning, EDA, and visualizations to uncover insights into team performances over the decades.
+					</p>
+				</div>
+			</div>
+		
+			<!-- Project 2 -->
+			<div class="card bg-[#1a1a1a] w-96 shadow-xl">
+				<figure class="h-48">
+					<a href="https://github.com/TanjiEvan/Coffee-Shop-Sales-Analysis">
+						<img src="images/proj_2.jpg" alt="Coffee Shop Sales Analysis" class="h-full w-full object-cover">
+					</a>
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title text-[#ffbd39] h-16">
+						Coffee Shop Sales Analysis
+					</h2>
+					<p class="text-justify">
+						Analyzed sales trends, customer behavior, and product performance for coffee shops. The project used Python and Plotly to provide insights for optimizing sales strategies and operations.
+					</p>
+				</div>
+			</div>
+		
+			<!-- Project 3 -->
+			<div class="card bg-[#1a1a1a] w-96 shadow-xl">
+				<figure class="h-48">
+					<a href="https://e-commerce-customer-behavior.streamlit.app/">
+						<img src="images/proj_3.jpg" alt="E-commerce Customer Behavior Analysis" class="h-full w-full object-cover">
+					</a>
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title text-[#ffbd39] h-16">
+						E-commerce Customer Behavior Analysis and Insights Web App
+					</h2>
+					<p class="text-justify">
+						Developed an interactive web app using Python and Streamlit to analyze e-commerce customer behavior, providing insights into demographics, purchase patterns, and satisfaction.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		</div>
+	  </section>
+	  
+
+
+
+    <section class="container mx-auto px-8 lg:px-24 ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Dhaka, Bangladesh</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+8801794303336">+8801794303336</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">tanji.evan23@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/tanjib-ul-islam/?profileId=ACoAAE8rju4BUvWLT51egXYsticQUqEkar_1H_w"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://www.facebook.com/TanjiEvan/"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/tanji_evan/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+  
+</html>
