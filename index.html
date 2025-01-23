@@ -151,37 +151,36 @@
 			  </h1>
 	  
 <!-- Element to contain animated typing -->
-<span id="typing-animation" class="text-white text-base font-normal"></span>
+<span id="typing-animation" class="text-white text-base font-normal h-10"></span>
 
 <script>
 // Initialize the typing animation
 const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Scientist',
-						];
+// Create an array of typing text
+const typingTexts = [
+    'Data Scientist', 'student'
+];
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+// Create a function to display the typing animation for a given text
+function playTypingAnimation(text, index) {
+    // Loop through each character and add it to the element
+    for (let i = 0; i < text.length; i++) {
+        setTimeout(() => {
+            typingAnimationElement.textContent += text[i];
+        }, i * 100); // Increase the delay to slow down the typing animation
+    }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 500);
-						}
+    // Once the animation is complete, reset the text and start over
+    setTimeout(() => {
+        typingAnimationElement.textContent = '';
+        playTypingAnimation(typingTexts[(index + 1) % typingTexts.length], (index + 1) % typingTexts.length);
+    }, text.length * 100 + 450); 
+}
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
+// Start the typing animation loop
+playTypingAnimation(typingTexts[0], 0);
+</script>
 
 
 			  <!-- Buttons -->
@@ -277,34 +276,6 @@ const typingAnimationElement = document.getElementById('typing-animation');
 		</div>
 	  </section>
 	  
-
-	<section class="container mx-auto px-8 lg:px-24 ftco-section contact-section ftco-no-pb" id="introduction">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-				<h1 class="big big-2">Introduction</h1>
-				<h2 class="mb-4">Introduction</h2>
-				<p></p>
-				</div>
-		  	</div>
-			  <div class="flex justify-center items-center my-8">
-				<div class="relative w-full max-w-2xl lg:max-w-4xl rounded-lg overflow-hidden shadow-lg bg-gray-800">
-					<video 
-						controls 
-						class="w-full rounded-lg" 
-						poster="BusCom/THUMBNAIL.png"  
-					>
-						<source 
-							src="BusCom/My Intro- Date.mp4" 
-							type="video/mp4"
-						/>
-						Your browser does not support the video tag.
-					</video>
-				</div>
-			</div>
-			
-	 	</div>
-   </section>
 	
     <section class="container mx-auto px-8 lg:px-24 ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
@@ -325,7 +296,7 @@ const typingAnimationElement = document.getElementById('typing-animation');
 		<div class="row">
 			<div class="col-md-6">
 				<div class="resume-wrap ftco-animate" style="height: 300px; padding: 30px; box-sizing: border-box; margin-bottom: 20px;">
-					<span class="date" style="font-size: 32px; font-weight: bold;">Dean's List Honors</span>
+					<span class="date text-[#f2496f]" style="font-size: 32px; font-weight: bold;">Dean's List Honors</span>
 					<h2 style="font-size: 22px; font-weight: bold;">American International University-Bangladesh</h2>
 					<span class="position" style="font-size: 18px;">Fall 2022-23</span>
 					<p class="mt-4" style="font-size: 16px;">Recognized for outstanding academic performance and excellence by being named to the Dean's List.</p>
@@ -410,7 +381,7 @@ const typingAnimationElement = document.getElementById('typing-animation');
 					</a>
 				</figure>
 				<div class="card-body">
-					<h2 class="card-title text-[#ffbd39] h-16">
+					<h2 class="card-title text-[#f2496f] h-16">
 						Analysis of Historical UEFA Champions League Data (1955-2023)
 					</h2>
 					<p class="text-justify">
@@ -427,7 +398,7 @@ const typingAnimationElement = document.getElementById('typing-animation');
 					</a>
 				</figure>
 				<div class="card-body">
-					<h2 class="card-title text-[#ffbd39] h-16">
+					<h2 class="card-title text-[#f2496f] h-16">
 						Coffee Shop Sales Analysis
 					</h2>
 					<p class="text-justify">
@@ -444,7 +415,7 @@ const typingAnimationElement = document.getElementById('typing-animation');
 					</a>
 				</figure>
 				<div class="card-body">
-					<h2 class="card-title text-[#ffbd39] h-16">
+					<h2 class="card-title text-[#f2496f] h-16">
 						E-commerce Customer Behavior Analysis and Insights Web App
 					</h2>
 					<p class="text-justify">
